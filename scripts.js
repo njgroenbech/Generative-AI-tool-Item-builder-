@@ -30,7 +30,7 @@ function logSuggestion() {
                 Return the message with no '*' characters you use to highlight, just only letters. 
                 If the champion input isn't a valid Champion in league of legends, return a message that reminds the user to use a valid Champion.
                 If play-style isn't related to LEAGUE OF LEGENDS play-styles, return a message that tells the user to choose a valid play-style.
-                If it IS a play-style in LEAGUE OF LEGENDS, complete the query.`
+                If it IS a play-style in LEAGUE OF LEGENDS, return. Search to see if Champions and Playstyles are correct.`
             }]
         })
     })
