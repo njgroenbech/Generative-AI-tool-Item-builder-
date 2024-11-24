@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1 id="title">Generate Builds on League of Legends Champions</h1>
+</header>
+<section class="input_container">
+<div class="inputgroup">
+    <label for="champion_input">Enter Champion</label>
+    <input type="text" id="champion_input" name="champion" placeholder="Garen, Akali, ">
+</div>
+<div class="inputgroup">
+    <label for="play_style">Which play-style?</label>
+    <input type="text" id="play_style" name="play-style" placeholder="Fun, AP, Crit etc.">
+</div>
+<div class="inputgroup">
+    <label>Insert your OpenAI API-key here</label>
+    <input type="password" id="api_key" name="api_key" placeholder="API-key">
+</div>
+<div id="submit">
+    <button class="btn">Find your build</button>
+</div>
+</section>
+    <div id="result_container">
+        <p class="result_text">Generated result will be shown here!</p>
+    </div>
+<script src="scripts.js"></script>
+</body>
+</html>

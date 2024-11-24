@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: white;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://images3.alphacoders.com/136/thumb-1920-1365726.jpeg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    text-align: center;
+    color: black;
+}
+
+.input_container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.inputgroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+}
+
+#champion_input, #api_key, #play_style {
+    border: 2px solid rgba(217, 176, 255, 0.7);
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#champion_input:focus, #api_key:focus, #play_style:focus {
+    border-color: rgb(217, 176, 255);
+}
+
+.btn {
+    --glow-color: rgb(217, 176, 255);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    --btn-color: rgb(100, 61, 136);
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border: 2px solid var(--glow-color);
+    background-color: var(--btn-color);
+    border-radius: 3rem;
+    cursor: pointer;
+    text-shadow: 0 0 0.5em var(--glow-color);
+    box-shadow: 0 0 1em 0.25em var(--glow-color),
+    0 0 4em 1em var(--glow-spread-color),
+    inset 0 0 0.5em 0.25em var(--glow-color);
+    transition: all 0.3s;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1.5em 0.3em var(--glow-color),
+    0 0 3em 2em var(--glow-spread-color),
+    inset 0 0 1em 0.5em var(--glow-color);
+}
+
+#result_container {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    max-width: 500px;
+}
+
+input {
+    text-align: center;
+}
+
+label {
+    text-align: center;
+    margin-bottom: 1rem;
+}
